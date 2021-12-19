@@ -56,7 +56,7 @@ h3 {
 }
 
 header {
-  background: rgba(75, 220, 75, 0.823);
+  background: lightgreen;
 }
 
 header ul {
@@ -79,20 +79,14 @@ nav {
 }
 
 .active {
-  background-color: lightgreen;
+  background-color: rgba(75, 220, 75, 0.823);
 }
 
 footer {
-  background-color: rgba(75, 220, 75, 0.823);
+  background-color: lightgreen;
   padding: 20px;
   text-align: center;
 }
-
-/* footer a {
-  text-decoration: none;
-  padding: 20px;
-  color: black;
-} */
 
 /* Home Page */
 
@@ -204,13 +198,12 @@ footer {
   margin: 10px auto;
 }
 
-.latest-posts {
+.latest-page {
   width: 95%;
   margin: 5rem auto;
-  text-align: center;
 }
 
-.latest-posts button {
+.latest-page button {
   background: rgba(75, 220, 75, 0.823);
   width: 20%;
   border-radius: 5px;
@@ -222,16 +215,16 @@ footer {
 
 .latest-container {
   display: flex;
+  width: 70%;
+  margin: auto;
   gap: 20px;
   flex-direction: column;
 }
 
 .latest-thumbnail {
-  text-align: start;
   display: flex;
   gap: 20px;
   padding: 15px 15px;
-  align-items: center;
   color: black;
   box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -396,7 +389,7 @@ form button {
     height: 150px;
   }
 
-  .latest-posts button {
+  .latest-page button {
     width: 30%;
   }
 }
@@ -431,14 +424,19 @@ form button {
     width: 30%;
   }
 
-  /* Posts Page */
-  .latest-posts h2 {
+  /* Blogs Page */
+
+  .latest-page h2 {
     font-size: 1.4rem;
     text-align: start;
   }
 
-  .latest-posts p {
+  .latest-page p {
     display: none;
+  }
+
+  .latest-container {
+    width: 85%;
   }
 
   /* Contact Page */
@@ -447,6 +445,7 @@ form button {
   }
 
   /* About Page */
+
   .about-page {
     flex-direction: column;
   }
@@ -475,6 +474,17 @@ form button {
 
   .carousel {
     padding: 0px;
+  }
+
+  .latest-container {
+    width: 90%;
+  }
+
+  .latest-thumbnail {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 2rem;
   }
 
   .slider {

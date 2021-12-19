@@ -20,7 +20,7 @@ function getImages(posts) {
         latestPosts.innerHTML += 
         `<div class="latest-thumbnail">
             <img src="${posts[i]._embedded['wp:featuredmedia']['0'].source_url}" />
-            <div post-details>
+            <div>
             <h2>${posts[i].title.rendered}</h2>
             ${posts[i].excerpt.rendered}
             <a href="blogpost.html?id=${posts[i].id}">Read More</a>
